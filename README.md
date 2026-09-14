@@ -2,7 +2,9 @@
 
 - Create React App
 - Configured TailwindCSS
-- 
+- Header
+- Login form
+- Sign up Form
 
 
 
@@ -21,3 +23,7 @@
 - NetflixGPT
     - Search Bar
     - Movie Suggestions
+
+
+
+    rafce fullform : react arrow function component export 
