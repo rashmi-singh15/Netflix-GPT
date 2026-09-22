@@ -34,6 +34,9 @@
 - TMDB Image CDN URL
 - Made the Browse page amazing with Tailwind CSS
 - usePopularMovies Custom hook
+- GPT Search Page
+- GPT Search Bar
+- (BONUS) Multi-language Feature in our App
 
 
 # Features 
@@ -192,3 +195,8 @@
 // };
 
 // export default Login;
+
+
+
+
+        'https://api.themoviedb.org/3/movie/top_rated?&page=1', 

@@ -16,3 +16,13 @@ export const API_OPTIONS = {
 
 
 export const IMG_CDN_URL = "https://image.tmdb.org/t/p/w500";
+
+
+export const BG_URL =
+       "https://i.pinimg.com/1200x/19/8b/2f/198b2f01e73b905772279616eccc7c65.jpg";
+
+export const SUPPORTED_LANGUAGES = [
+    {identifier: "en", name: "English"}, 
+    {identifier: "hindi", name: "Hindi"}, 
+    {identifier: "spanish", name: "Spanish"},
+];
