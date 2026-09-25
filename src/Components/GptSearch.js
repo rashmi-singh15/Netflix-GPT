@@ -1,61 +1,29 @@
-// import React from "react";
-// import GptMovieSuggestion from "./GptMovieSuggestion";
-// import GptSearchBar from "./GptSearchBar";
-// import { BG_URL } from "../utils/constants";
-
-// const GptSearch = () => {
-//   return (
-//     <div className="relative min-h-screen w-full overflow-hidden">
-
-//       {/* Background */}
-//       <div className="fixed inset-0 -z-10">
-//         <img
-//           src={BG_URL}
-//           alt="Netflix Background"
-//           className="h-full w-full object-cover"
-//         />
-
-//         {/* Dark Overlay */}
-//         <div className="absolute inset-0 bg-black/40"></div>
-//       </div>
-
-//       {/* Content */}
-//       <div className="relative z-10">
-//         <GptSearchBar />
-//         <GptMovieSuggestion />
-//       </div>
-
-//     </div>
-//   );
-// };
-
-// export default GptSearch;
 
 import React from "react";
-import GptMovieSuggestion from "./GptMovieSuggestion";
-import GptSearchBar from "./GptSearchBar";
 import { BG_URL } from "../utils/constants";
+import GptSearchBar from "./GptSearchBar";
+import GptMovieSuggestion from "./GptMovieSuggestion";
 
 const GptSearch = () => {
   return (
-    <div className="relative min-h-screen w-full">
-
+    <div className="min-h-screen relative">
+      
       {/* Background */}
-      <div className="fixed inset-0 z-0 pointer-events-none">
+      <div className="fixed inset-0 -z-10">
         <img
           src={BG_URL}
-          alt="Netflix Background"
-          className="h-full w-full object-cover"
+          alt="background"
+          className="w-full h-full object-cover"
         />
 
-        <div className="absolute inset-0 bg-black/40"></div>
+        <div className="absolute inset-0 bg-black opacity-70"></div>
       </div>
 
-      {/* GPT Search Content */}
-      <div className="relative z-10">
-        <GptSearchBar />
-        <GptMovieSuggestion />
-      </div>
+      {/* Search bar */}
+      <GptSearchBar />
+
+      {/* Movie results */}
+      <GptMovieSuggestion />
 
     </div>
   );

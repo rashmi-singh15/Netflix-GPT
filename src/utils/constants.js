@@ -10,7 +10,7 @@ export const API_OPTIONS = {
   headers: {
     accept: 'application/json', 
        Authorization: 
-          'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI1YzQ2MGYyYzAyNDA1ZjU1ZDk3MjM2MmQ1MDMyOWZlMiIsIm5iZiI6MTc4OTcyNzAyNi4zNTM5OTk5LCJzdWIiOiI2YWFkMTEzMmQ4ZTUwMTQ4ZGI1YmQzNWUiLCJzY29wZXMiOlsiYXBpX3JlYWQiXSwidmVyc2lvbiI6MX0.xFy9XsfLg2SL9G8GNFBRv6jj8fNPvzxIdSIt2kELULo'
+          "Bearer" + process.env.REACT_APP_TMDB_KEY,
     },
 };
 
@@ -22,7 +22,19 @@ export const BG_URL =
        "https://i.pinimg.com/1200x/19/8b/2f/198b2f01e73b905772279616eccc7c65.jpg";
 
 export const SUPPORTED_LANGUAGES = [
-    {identifier: "en", name: "English"}, 
-    {identifier: "hindi", name: "Hindi"}, 
-    {identifier: "spanish", name: "Spanish"},
+  {
+    identifier: "en",
+    name: "English",
+  },
+  {
+    identifier: "hindi",
+    name: "Hindi",
+  },
+  {
+    identifier: "spanish",
+    name: "Spanish",
+  },
 ];
+
+export const GEMINI_API_KEY =
+  process.env.REACT_APP_GEMINI_API_KEY;
