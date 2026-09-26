@@ -66,10 +66,10 @@ const Header = () => {
 
 
   return (
-  <div className="fixed top-0 left-0 w-full px-8 py-2 bg-gradient-to-b from-black z-50 flex justify-between">
-     <img  className="w-40" src={LOGO} alt="logo" />
+  <div className="fixed top-0 left-0 w-full px-8 py-2 bg-gradient-to-b from-black z-50 flex  flex-col md:flex-row justify-between">
+     <img  className="w-40 mx-auto md:mx-0" src={LOGO} alt="logo" />
      {user && location.pathname === "/browse" && (
-     <div className="flex p-2">
+     <div className="flex p-2 justify-between">
       {showGptSearch && (
       <select 
       className= "p-2 m-2 bg-gray-900 text-white" 
@@ -89,7 +89,7 @@ const Header = () => {
         {showGptSearch ? "Homepage" : "GPT Search"}
       </button>
        <img
-          className="w-12 h-12"
+          className="hidden md:block w-12 h-12"
           alt="usericon"
           src={user?.photoURL || "https://avatars.githubusercontent.com/u/220914431?s=96&v=4"}/>
         <button 
